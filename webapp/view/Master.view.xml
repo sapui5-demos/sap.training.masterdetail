@@ -1,0 +1,45 @@
+<mvc:View
+		controllerName="sap.training.masterdetail.controller.Master"
+		xmlns:mvc="sap.ui.core.mvc"
+		xmlns:core="sap.ui.core"
+		xmlns="sap.m"
+		xmlns:semantic="sap.m.semantic">
+
+	<semantic:MasterPage
+			id="page"
+			title="{i18n>masterTitle}">
+
+		<semantic:content>
+			<List
+					id="list"
+					items="{
+						path: '/Products',
+						sorter: {
+							path: 'Name',
+							descending: false
+							}
+					}"
+					busyIndicatorDelay="0"
+					mode="{= ${device>/system/phone} ? 'None' : 'SingleSelectMaster'}"
+					growing="true"
+					growingThreshold="10"
+					growingScrollToLoad="true"
+					select="onSelect">
+			
+				<items>
+					<ObjectListItem
+							type="{= ${device>/system/phone} ? 'Active' : 'Inactive'}"
+							press="onSelect"
+							title="{Name}"
+
+							number="{
+								path: 'Price',
+								formatter: '.formatter.currencyValue'
+							}"
+                            numberUnit="EUR">
+					</ObjectListItem>
+				</items>
+			</List>
+		</semantic:content>
+	</semantic:MasterPage>
+</mvc:View>

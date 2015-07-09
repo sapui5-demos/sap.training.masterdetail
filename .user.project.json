@@ -1,0 +1,56 @@
+{
+  "run": [
+    {
+      "filePath": "/sap.training.masterdetail/webapp/index.html",
+      "previewMode": 0,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "_metadata": {
+        "runnerId": "webapprunner",
+        "id": 5153216,
+        "displayName": "New Web Application 2"
+      }
+    },
+    {
+      "filePath": "/sap.training.masterdetail/webapp/test.html",
+      "previewMode": 0,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "_metadata": {
+        "runnerId": "webapprunner",
+        "id": 1411098,
+        "displayName": "New Web Application 1"
+      }
+    },
+    {
+      "filePath": "/sap.training.masterdetail/webapp/test/testFLP.html",
+      "previewMode": 0,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "urlParameters": [],
+      "_metadata": {
+        "runnerId": "webapprunner",
+        "id": 1978925,
+        "displayName": "Run with Server"
+      }
+    },
+    {
+      "filePath": "/sap.training.masterdetail/webapp/test/testFLPService.html",
+      "previewMode": 0,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "urlParameters": [],
+      "_metadata": {
+        "runnerId": "webapprunner",
+        "id": 1978925,
+        "displayName": "Run with MockServer"
+      }
+    }
+  ]
+}

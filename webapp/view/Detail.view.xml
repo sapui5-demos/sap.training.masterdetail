@@ -1,0 +1,32 @@
+<mvc:View controllerName="sap.training.masterdetail.controller.Detail" 
+	xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns="sap.m">
+	<semantic:DetailPage  id="page" navButtonPress="onNavBack"
+		showNavButton="{device>/system/phone}" title="{i18n>detailTitle}">
+		<semantic:content>
+			<ObjectHeader  id="objectHeader" number="{ path: 'Price', formatter: '.formatter.currencyValue' }" numberUnit="EUR" title="{Name}">
+				<statuses>
+					<ObjectStatus state="Success" text="{ path: 'ReleaseDate', type: 'sap.ui.model.type.Date' }"/>
+				</statuses>
+				<attributes>
+					<ObjectAttribute text="{Description}"/>
+				</attributes>
+			</ObjectHeader>
+			<IconTabBar class="sapUiResponsiveContentPadding" id="iconTabBar">
+				<items>
+					<IconTabFilter binding="{Supplier}" icon="sap-icon://hint">
+						<content>
+							<List  headerText="{i18n>supplierListHeader}">
+								<DisplayListItem label="{i18n>nameLabel}" value="{Name}"/>
+								<DisplayListItem label="{i18n>streetLabel}" value="{Address/Street}"/>
+								<DisplayListItem label="{i18n>cityLabel}"  value="{Address/City}"/>
+								<DisplayListItem label="{i18n>zipCodeLabel}"  value="{Address/ZipCode}"/>
+								<DisplayListItem label="{i18n>stateLabel}"  value="{Address/State}"/>
+								<DisplayListItem label="{i18n>countryLabel}"  value="{Address/Country}"/>
+							</List>
+						</content>
+					</IconTabFilter>
+				</items>
+			</IconTabBar>
+		</semantic:content>
+	</semantic:DetailPage>
+</mvc:View>
