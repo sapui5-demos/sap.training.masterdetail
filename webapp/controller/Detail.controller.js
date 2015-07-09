@@ -14,9 +14,6 @@ sap.ui.define([
 
 		onInit: function() {
 
-			this.getView().setBusyIndicatorDelay(0);
-			this.getView().setBusy(true);
-
 			this.getRouter().getRoute("object").attachPatternMatched(this._onObjectMatched, this);
 
 		},

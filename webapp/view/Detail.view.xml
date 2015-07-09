@@ -1,5 +1,5 @@
 <mvc:View controllerName="sap.training.masterdetail.controller.Detail" 
-	xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns="sap.m">
+	xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic" xmlns="sap.m" busyIndicatorDelay="0" busy="true">
 	<semantic:DetailPage  id="page" navButtonPress="onNavBack"
 		showNavButton="{device>/system/phone}" title="{i18n>detailTitle}">
 		<semantic:content>
