@@ -24,7 +24,7 @@
 					growing="true"
 					growingThreshold="10"
 					growingScrollToLoad="true"
-					select="onSelect">
+					selectionChange="onSelect">
 			
 				<items>
 					<ObjectListItem
