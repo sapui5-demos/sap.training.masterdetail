@@ -3,7 +3,7 @@ sap.ui.define([
 	], function(BaseObject) {
 	"use strict";
 
-	return BaseObject.extend("sap.training.masterdetail.model.ListSelector", {
+	return BaseObject.extend("sap.training.masterdetail.controller.ListSelector", {
 
 		/**
 		 * Provides a convenience API for selecting list items. All the functions will wait until the initial load of the List passed to the instance by the setBoundMasterList

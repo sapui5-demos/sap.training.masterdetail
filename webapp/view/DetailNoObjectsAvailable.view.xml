@@ -7,7 +7,6 @@
 			id="page"
 			title="{i18n>masterTitle}"
 			text="{i18n>noObjectsAvailableText}"
-			icon="{sap-icon://product}"
 			description=""
 			showNavButton="{device>/system/phone}"
 			navButtonPress="onNavBack">
